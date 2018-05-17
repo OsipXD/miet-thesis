@@ -11,7 +11,7 @@ git clone https://github.com/OsipXD/miet-thesis.git
 ```
 
 Скопировать файлы или лучше сделать мягкую ссылку:
-`G2-105.sty  G7-32.cls  G7-32.sty  GostBase.clo  gosttitleGostRV15-110mipt.sty  gosttitleGostRV15-110.sty  local-minted.sty` в локальный texmf (`$HOME/texmf/`).
+`G2-105.sty`, `G7-32.cls`,  `G7-32.sty`, `GostBase.clo`, `gosttitleGostRV15-110mipt.sty`, `gosttitleGostRV15-110.sty`, `local-minted.sty` в локальный texmf (`$HOME/texmf/`).
 Проверить это можно командой `kpsewhich -var-value=TEXMFHOME`.
 Относительно texmf путь будет `texmf/tex/latex/latex-g7-32/`.
 ```sh
