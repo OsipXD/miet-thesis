@@ -9,12 +9,12 @@
 
 % Сюда пихать новые языки
 \newcommand{\makenewmintedenviromnents}[1]{%
-\newminted{c}{#1}%
-\newminted{ebnf}{#1}%
-\newminted{python}{#1}%
-\newmintedfile{c}{#1}%
-\newmintedfile{ebnf}{#1}%
-\newmintedfile{python}{#1}%
+  \newminted{c}{#1}%
+  \newminted{ebnf}{#1}%
+  \newminted{python}{#1}%
+  \newmintedfile{c}{#1}%
+  \newmintedfile{ebnf}{#1}%
+  \newmintedfile{python}{#1}%
 }
 
 % Магия! Здесь происходит непосредственное определение всех окружений
@@ -27,6 +27,6 @@
 % \expandafter\makenewinputminted\expandafter{\mintedoptions}
 
 \renewcommand{\listingscaption}{Листинг}
-\renewcommand{\listoflistingscaption}{Листинги}
+\renewcommand{\listoflistingscaption}{Листинги} 
 \fi
 \endinput
