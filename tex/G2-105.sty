@@ -440,16 +440,16 @@
   % breaks
 %   \RequirePackage{unicode-math}
 
-   % проверка наличия шрифта в системе
-   \def\IfNoFont#1#2#3{
-   \count255=\interactionmode
-   \suppressfontnotfounderror1
-   \batchmode
-   \def\myfont{#1}
-   \font\foo="\myfont"\space at 10pt
-   \interactionmode=\count255
-   \ifx\foo\nullfont#2\else#3\fi
-   }
+  % проверка наличия шрифта в системе
+  \newcommand{\IfNoFont}[3]{
+    \count255=\interactionmode
+    \suppressfontnotfounderror1
+    \batchmode
+    \def\myfont{#1}
+    \font\foo="\myfont"\space at 10pt
+    \interactionmode=\count255
+    \ifx\foo\nullfont#2\else#3\fi
+  }
 
   \RequirePackage{fontspec}
   \RequirePackage{xecyr}
@@ -535,6 +535,43 @@
     NFSSFamily = cyrillicfontttnoftr
     ]
   }}{}
+
+  % Использовать шрифты liberation
+  \IfStrEq{\Gost@fonts}{liberation}{
+  % Основной шрифт
+  \IfNoFont{Liberation Serif}{
+    \@latex@warning{\Gost@Font@Warning{Liberation Serif}}
+    \Gost@use@cm@main
+  }{
+    \setmainfont{Liberation Serif}
+    \newfontfamily\cyrillicfont{Liberation Serif}[Script = Cyrillic] % для кириллицы
+  }
+
+  % Шрифт без засечек
+  \IfNoFont{Liberation Sans}{
+    \@latex@warning{\Gost@Font@Warning{Liberation Sans}}
+    \Gost@use@cm@sans
+  }{
+    \setsansfont{Liberation Sans}
+    \newfontfamily\cyrillicfontsf{Liberation Sans}[Script = Cyrillic] % для кириллицы
+  }
+
+  % Моноширинный шрифт
+  \IfNoFont{Liberation Mono}{
+    \@latex@warning{\Gost@Font@Warning{Liberation Mono}}
+    \Gost@use@cm@mono
+  }{
+    \setmonofont{Liberation Mono}
+    \newfontfamily\cyrillicfonttt{Liberation Mono}[Script = Cyrillic] % для кириллицы
+
+    % Шрифт для minted
+    \defaultfontfeatures{}
+    \newfontfamily\cyrillicfontttnoftr{Liberation Mono}[
+    Script = Cyrillic,
+    NFSSFamily = cyrillicfontttnoftr
+    ]
+  }}{}
+
 
   % Использовать шрифты astra
   \IfStrEq{\Gost@fonts}{astra}{

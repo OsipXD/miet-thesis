@@ -25,6 +25,7 @@
 \DeclareOption{usepscyr}{\renewcommand\Gost@fonts{pscyr}}
 \DeclareOption{pscyr}{\renewcommand\Gost@fonts{pscyr}}
 \DeclareOption{times}{\renewcommand\Gost@fonts{times}}
+\DeclareOption{liberation}{\renewcommand\Gost@fonts{liberation}}
 \DeclareOption{astra}{\renewcommand\Gost@fonts{astra}}
 \DeclareOption{cm}{\renewcommand\Gost@fonts{cm}}
 \DeclareOption{bold}{\@useboldtrue}
