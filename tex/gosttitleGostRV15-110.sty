@@ -1,69 +1,69 @@
-
 \renewenvironment*{titlepage}{
- \thispagestyle{empty}
-  \linespread{1.1}\normalsize
-  \hfill \Nir@Grif
+\thispagestyle{empty}
+\linespread{1.1}\normalsize
+\hfill \Nir@Grif
 
-  \hfill \Nir@Ekz
-  \vspace{-3ex}
+\hfill \Nir@Ekz
+\vspace{-3ex}
 
-  \IfFileExists{logo.pdf}{      % logo for first page (no compatible with GOST)
-  \begin{flushleft}
-  \parbox[t]{.3\linewidth}{
+\IfFileExists{logo.pdf}{      % logo for first page (no compatible with GOST)
+\begin{flushleft}
+    \parbox[t]{.3\linewidth}{
     \vspace{-5ex}\center{\includegraphics[width=.99\linewidth]{logo}}\\
-  }
-  {{\Nir@OrgLongName}}  % name of Institute
+    }
+    {{\Nir@OrgLongName}}
+    % name of Institute
 
-  \end{flushleft}
-  }{
-  \begin{center}
-  {{\Nir@OrgLongName}} % name of Institute
-  \end{center}
-  }
- \begin{centering}
+\end{flushleft}
+}{
+\begin{center}
+{{\Nir@OrgLongName}} % name of Institute
+\end{center}
+}
+\begin{centering}
 
-  \vspace{3ex}
+    \vspace{3ex}
 
-  \parbox[t]{.33\linewidth}{
+    \parbox[t]{.33\linewidth}{
     \Nir@UdkName\\ % UDK name and number
     \Nir@No\\       %Reg name and number
     \Nir@InventarNo\\ %Inventory name and number
-  }
-  \hfill\Nir@BossStamp
-  
-  %\vspace{3ex}
-  \vfill
+    }
+    \hfill\Nir@BossStamp
 
-  \MakeUppercase{\Nir@AnnOtchet \Nir@ReportName}\\ % Annotated and Report name
-  \MakeUppercase{\Nir@About}         % Report about
+    %\vspace{3ex}
+    \vfill
 
-  %\vspace{2ex}
-  \Nir@TitleAndSubject          % Report Subject
+    \MakeUppercase{\Nir@AnnOtchet \Nir@ReportName}\\ % Annotated and Report name
+    \MakeUppercase{\Nir@About}         % Report about
 
-  \Nir@Code
+    %\vspace{2ex}
+    \Nir@TitleAndSubject          % Report Subject
 
-  (\Nir@StageType)              % Stage type
+    \Nir@Code
 
-  \vspace{2ex}
-  \Nir@PartNum
+    (\Nir@StageType)              % Stage type
 
-  \vfill
+    \vspace{2ex}
+    \Nir@PartNum
 
-  \hfill\Nir@ManagerStamp
+    \vfill
 
-  \vspace{2ex}
+    \hfill\Nir@ManagerStamp
 
-  \hfill\Nir@IspStamp
+    \vspace{2ex}
+
+    \hfill\Nir@IspStamp
 
 
-  \vfill
+    \vfill
 
-  \vfill
+    \vfill
 
-  \Nir@Town~\Nir@Year
+    \Nir@Town~\Nir@Year
 
- \end{centering}
- \linespread{\Gost@LineSpread}\normalsize
+\end{centering}
+\linespread{\Gost@LineSpread}\normalsize
 }
 
 

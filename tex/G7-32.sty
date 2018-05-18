@@ -20,11 +20,11 @@
 % ГОСТ 7.32-2001 ред. 2009 года.pdf item 6.1.2:
 % Полужирный шрифт не применяется
 \renewcommand\GostTitleStyle{%
-    \if@usebold%
-    \bfseries%
-    \else%
-    \normalfont%
-    \fi%
+\if@usebold%
+\bfseries%
+\else%
+\normalfont%
+\fi%
 }%
 
 % ГОСТ 7.32-2001 ред. 2009 года.pdf item 6.2.1:
@@ -32,66 +32,66 @@
 % строки без точки в конце и печатать прописными буквами, не
 % подчёркивая.
 \renewcommand\Gost@StructChapterStyle{
-    \if@usebold
-    \bfseries
-    \fi
-    \centering\MakeUppercase
+\if@usebold
+\bfseries
+\fi
+\centering\MakeUppercase
 }
 
 % Get rid of the large font in chapter titles
 % (not sure whether this is regulated)
 % (TODO: Perhaps, this should be an option.)
 \renewcommand\Gost@MainChapterStyle{%
-    \if@usebold%
-    \bfseries%
-    \fi%
+\if@usebold%
+\bfseries%
+\fi%
 }%
 
 %стандартные части
 \newcommand\Executors{%список исполнителей
- \chapter*{Список~%
-           исполнителей}%
+\chapter*{Список~%
+исполнителей}%
 }
 \newcommand\Referat{%реферат
- \chapter*{Реферат}%
+\chapter*{Реферат}%
 }
 
 \addto\captionsrussian{%
- \def\contentsname{%
-  Содержание}%
- \def\bibname{%
-  Список~
-  использованных~
-  источников}%
+\def\contentsname{%
+Содержание}%
+\def\bibname{%
+Список~
+использованных~
+источников}%
 }
 \newcommand\NormRefs{%нормативные ссылки
- \chapter*{Нормативные~%
-           ссылки}%
-           В настоящем отчете о НИР использованы ссылки на следующие стандарты.
-           \vspace{1ex}
+\chapter*{Нормативные~%
+ссылки}%
+В настоящем отчете о НИР использованы ссылки на следующие стандарты.
+\vspace{1ex}
 }
 
 \newenvironment{abstract}{%То же самое, только как у белых людей -- Коротков И.
- \Referat
+\Referat
 }{}
 \newcommand\Defines{%глоссарий
-    \newpage
-    \section*{\centering ОПРЕДЕЛЕНИЯ}%Ugly hack((( FIXME
-    % суть в том что Defines находится внутри nomencl и только section выкидывает в нужное место
-    \section*{\mdseries В настоящем отчете применяют следующие термины с соответствующими определениями.}% Ugly hack(((
+\newpage
+\section*{\centering ОПРЕДЕЛЕНИЯ}%Ugly hack((( FIXME
+% суть в том что Defines находится внутри nomencl и только section выкидывает в нужное место
+\section*{\mdseries В настоящем отчете применяют следующие термины с соответствующими определениями.}% Ugly hack(((
 }
 %\newcommand\Defines{%определения
 % \chapter*{Определения}%
 %}
 \newcommand\Abbreviations{%обозначения и сокращения
- \chapter*{Обозначения~и~%
-           сокращения}%
+\chapter*{Обозначения~и~%
+сокращения}%
 }
 \newcommand\Introduction{%введение
- \chapter{Введение}%
+\chapter{Введение}%
 }
 \newcommand\Conclusion{%заключение
- \chapter{Заключение}%
+\chapter{Заключение}%
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,31 +99,31 @@
 % (for Executors and the managers on the title page)
 
 \newcommand*\personalSignature[2]{%
-  \par\noindent
-  \makebox[\textwidth]{%
-    \parbox[b]{.4\textwidth}{\raggedright #1}
-    \hfill
-    \parbox[t]{.25\textwidth}{\ulfill\mbox{}}
-    \hfill
-    \parbox[t]{.25\textwidth}{\raggedright #2}
-  }
+\par\noindent
+\makebox[\textwidth]{%
+\parbox[b]{.4\textwidth}{\raggedright #1}
+\hfill
+\parbox[t]{.25\textwidth}{\ulfill\mbox{}}
+\hfill
+\parbox[t]{.25\textwidth}{\raggedright #2}
+}
 }
 
 \newcommand*\ulfill{\mbox{}\leaders\hrule depth 2pt height -1.5pt\hfill} % similar to an underline
 
 \newenvironment*{executors}{%
-  \Executors
-  % There will be subheadings like:
-  % 
-  % * perhaps -- Руководитель темы
-  % * Исполнители:
-  % * optionally -- Соисполнители
-  % 
-  % They should be printed without an indent.
-  \setlength{\parindent}{0pt}
-  % This environment could be useful to change other parameters as
-  % well:
-  % TODO: parameterize the sizes of the blocks in \personalSignature
+\Executors
+% There will be subheadings like:
+%
+% * perhaps -- Руководитель темы
+% * Исполнители:
+% * optionally -- Соисполнители
+%
+% They should be printed without an indent.
+\setlength{\parindent}{0pt}
+% This environment could be useful to change other parameters as
+% well:
+% TODO: parameterize the sizes of the blocks in \personalSignature
 }{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,13 +135,13 @@
 
 % Government registration number
 \newcommand\Nir@No{%
- \No~госрегистрации \makebox[3em]{\ulfill}%
+\No~госрегистрации \makebox[3em]{\ulfill}%
 }
 \newcommand*\NirGosNo[1]{\renewcommand\Nir@No{#1}}%%virens added: номер госрегистрации
 
 % Examples number
 \newcommand\Nir@Ekz{%
-    \vspace{-2ex}                 % Number examples
+\vspace{-2ex}                 % Number examples
 }
 \newcommand*\NirEkz[1]{\renewcommand\Nir@Ekz{#1}}               %%  To change exemples num
 
@@ -157,13 +157,13 @@
 
 % Inventory number
 \newcommand\Nir@InventarNo{
- Инв.~\No \makebox[3em]{\ulfill}%
+Инв.~\No \makebox[3em]{\ulfill}%
 }
 \newcommand*\NirInventarNo[1]{\renewcommand\Nir@InventarNo{#1}} % to change Inv number
 
 % Organization name
 \newcommand\Nir@OrgLongName{
-    \vspace{1ex}
+\vspace{1ex}
 
 \hrule
 \vspace{1ex}
@@ -175,15 +175,15 @@
 
 % Report Name
 \newcommand*\Nir@ReportName{%
- Отчёт%
+Отчёт%
 }
 \newcommand\NirReportName[1]{\renewcommand\Nir@ReportName{#1}}        % to change otchet name text
 
 % Report about text
 \newcommand*\Nir@About{
- О{} НАУЧНО-%
- ИССЛЕДОВАТЕЛЬСКОЙ{} %
- РАБОТЕ%
+О{} НАУЧНО-%
+ИССЛЕДОВАТЕЛЬСКОЙ{} %
+РАБОТЕ%
 }
 \newcommand\NirAbout[1]{\renewcommand\Nir@About{#1}}      % to change otchet about text
 
@@ -204,100 +204,100 @@
 \newcommand*\NirTown[1]{\renewcommand\Nir@Town{#1}}%%virens added: указываем город написания отчёта
 
 \newcommand\Nir@BossStamp{
-    \parbox[t]{.49\linewidth}{
-        {\centering\MakeUppercase{\Nir@Confirm} % Confirmation name 
+\parbox[t]{.49\linewidth}{
+{\centering\MakeUppercase{\Nir@Confirm} % Confirmation name
 
-        }
-        \vspace{5mm}
-        {\raggedright\Nir@BossPost          % Director job
+}
+\vspace{5mm}
+{\raggedright\Nir@BossPost          % Director job
 
-        }
-        \bigskip
-        \ulfill~\Nir@BossName               % Director name
+}
+\bigskip
+\ulfill~\Nir@BossName               % Director name
 
-        \bigskip
-        <<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г. % Signature
-    }
+\bigskip
+<<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г. % Signature
+}
 }
 \newcommand*\NirBossStamp[1]{\renewcommand\Nir@BossStamp{#1}} % Changeable ID Boss stamp
 
 
 \newcommand\Nir@BossPost{
-    \vspace{3ex}
-    \hrule\par \vspace{1ex}
-    \centering\footnotesize головной исполнитель НИР
+\vspace{3ex}
+\hrule\par \vspace{1ex}
+\centering\footnotesize головной исполнитель НИР
 }
 \newcommand\Nir@BossName{\makebox[5em]{\ulfill}}
 
 \newcommand*\NirBoss[3][0.49]{
-    \renewcommand\Nir@BossPost{#2}\renewcommand\Nir@BossName{#3}
-    \renewcommand\Nir@BossStamp{
-        \parbox[t]{#1\linewidth}{
-            {\centering\MakeUppercase{\Nir@Confirm} % Confirmation name 
+\renewcommand\Nir@BossPost{#2}\renewcommand\Nir@BossName{#3}
+\renewcommand\Nir@BossStamp{
+\parbox[t]{#1\linewidth}{
+{\centering\MakeUppercase{\Nir@Confirm} % Confirmation name
 
-            }
-            \vspace{5mm}
-            {\raggedright\Nir@BossPost          % Director job
+}
+\vspace{5mm}
+{\raggedright\Nir@BossPost          % Director job
 
-            }
-            \bigskip
-            \ulfill~\Nir@BossName               % Director name
+}
+\bigskip
+\ulfill~\Nir@BossName               % Director name
 
-            \bigskip
-            <<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г. % Signature
-        }
-    }
+\bigskip
+<<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г. % Signature
+}
+}
 } % ID of Director
 
 % Head manager stamp
 \newcommand\Nir@ManagerStamp{\vspace{-2ex}}
 \newcommand\Nir@ManagerPost{
-    \vspace{3ex}
-    \hrule\par \vspace{1ex}
-    \centering\footnotesize научный руководитель НИР
+\vspace{3ex}
+\hrule\par \vspace{1ex}
+\centering\footnotesize научный руководитель НИР
 }
 \newcommand\Nir@ManagerName{\makebox[5em]{\ulfill}}
 
 \newcommand*\NirManager[3][.49]{
-    \renewcommand\Nir@ManagerPost{#2} \renewcommand\Nir@ManagerName{#3}
-    \renewcommand\Nir@ManagerStamp{
-        \parbox[t]{#1\linewidth}{
-            {\raggedright\Nir@ManagerPost
+\renewcommand\Nir@ManagerPost{#2} \renewcommand\Nir@ManagerName{#3}
+\renewcommand\Nir@ManagerStamp{
+\parbox[t]{#1\linewidth}{
+{\raggedright\Nir@ManagerPost
 
-            }
-            \bigskip
-            \ulfill~\Nir@ManagerName
+}
+\bigskip
+\ulfill~\Nir@ManagerName
 
-            \bigskip
-            <<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г.
-        }
-    }
+\bigskip
+<<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г.
+}
+}
 } % ID of head of research
 \newcommand*\NirManagerStamp[1]{\renewcommand\Nir@ManagerStamp{#1}} % Changeable ID Manager stamp
 
 % Head executor of research
 \newcommand\Nir@IspStamp[1]{\vspace{-2ex}}
 \newcommand\Nir@IspPost{
-    \vspace{3ex}
+\vspace{3ex}
 \hrule\par
 \vspace{1ex}
 \centering\footnotesize ответственный исполнитель
 }
 \newcommand\Nir@IspName{\makebox[5em]{\ulfill}}
 \newcommand*\NirIsp[3][0.49]{
-    \renewcommand\Nir@IspPost{#2}\renewcommand\Nir@IspName{#3}
-    \renewcommand\Nir@IspStamp[1]{
-        \parbox[t]{#1\linewidth}{
-            {\raggedright\Nir@IspPost
+\renewcommand\Nir@IspPost{#2}\renewcommand\Nir@IspName{#3}
+\renewcommand\Nir@IspStamp[1]{
+\parbox[t]{#1\linewidth}{
+{\raggedright\Nir@IspPost
 
-            }
-            \bigskip
-            \ulfill~\Nir@IspName
+}
+\bigskip
+\ulfill~\Nir@IspName
 
-            \bigskip
-            <<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г.
-        }
-    }
+\bigskip
+<<\makebox[3em]{\ulfill}>>~\ulfill~\Nir@Year~г.
+}
+}
 } % ID of head executor of research
 \newcommand*\NirIspStamp[1]{\renewcommand\Nir@IspStamp{#1}}     % Changeable head executor stamp
 
@@ -305,7 +305,7 @@
 \newcommand\Nir@Title{\vspace{-2ex}}
 \newcommand\Nir[1]{\renewcommand\Nir@Title{#1}}  %Название НИР, не совместимо с \NirTitle  
 \newcommand\Nir@TitleAndSubject{
-    \vspace{5ex}
+\vspace{5ex}
 \hrule\par\vspace{1ex}
 \centering\footnotesize наименование и шифр НИР\par\vspace{5ex}
 \hrule
@@ -318,27 +318,27 @@
 %
 % Optionally, specify a different report subject:
 \newcommand\NirSubject[1]{%
-  \renewcommand\Nir@TitleAndSubject{%
-    \Nir@Title
-    \vspace{1ex}
-    \par
-    \NirSubjectModifier{#1}%
-  }%
+\renewcommand\Nir@TitleAndSubject{%
+\Nir@Title
+\vspace{1ex}
+\par
+\NirSubjectModifier{#1}%
+}%
 }
 
 %
 % The default modifier is as in example 1 in ГОСТ 7.32-2001 ред. 2009 года.pdf:
 % "по теме:"
 \newcommand\NirSubjectModifier{%
-  по~теме:\\
-  %\MakeUppercase%
+по~теме:\\
+%\MakeUppercase%
 }
 %
 % A switch for the variant of the modifier as
 % in example 3 in ГОСТ 7.32-2001 ред. 2009 года.pdf:
 % (empty)
 \newcommand*\NirBareSubject[1]{%
-  \renewcommand\NirSubjectModifier{}%
+\renewcommand\NirSubjectModifier{}%
 }
 
 % вид отчёта:
@@ -359,10 +359,10 @@
 % by any example in ГОСТ 7.32-2001 ред. 2009 года.pdf,
 % but it is like in a document example I've seen elsewhere.
 \newcommand*\NirFinal[1][\@finalname]{%
-  \renewcommand\Nir@StageType{#1}%
+\renewcommand\Nir@StageType{#1}%
 }
 \newcommand*\NirFinalStage[2][\@finalname]{%
-  \renewcommand\Nir@StageType{#1, #2}%
+\renewcommand\Nir@StageType{#1, #2}%
 } % Usage: \NirFinalStage[промежуточный]{этап~3}
 
 % Following allows to change command arguments
@@ -374,11 +374,11 @@
 
 \RequirePackage{etoolbox}%                                  For \newrobustcmd
 \def\beamer@calltheme#1#2#3{%
-    \def\beamer@themelist{#2}%
-    \@for\beamer@themename:=\beamer@themelist\do
-    {\usepackage[{#1}]{#3\beamer@themename}}}
+\def\beamer@themelist{#2}%
+\@for\beamer@themename:=\beamer@themelist\do
+{\usepackage[{#1}]{#3\beamer@themename}}}
 
-  \newrobustcmd*\gosttitle[2][]{\beamer@calltheme{#1}{#2}{gosttitle}}
+\newrobustcmd*\gosttitle[2][]{\beamer@calltheme{#1}{#2}{gosttitle}}
 
 \def\maketitle{\titlepage}
 
@@ -394,27 +394,27 @@
 
 \RequirePackage{mfirstuc}
 \newcommand*\makefirstlc[1]{%
-  \renewcommand*\mfirstucMakeUppercase{\MakeLowercase}%
-  % switched the case-switching command for a while
-  \makefirstuc{#1}%
-  \renewcommand*\mfirstucMakeUppercase{\MakeUppercase}%
+\renewcommand*\mfirstucMakeUppercase{\MakeLowercase}%
+% switched the case-switching command for a while
+\makefirstuc{#1}%
+\renewcommand*\mfirstucMakeUppercase{\MakeUppercase}%
 }
 \newcommand*\xmakefirstlc[1]{%
-  \renewcommand*\mfirstucMakeUppercase{\MakeLowercase}%
-  % switched the case-switching command for a while
-  \xmakefirstuc{#1}%
-  \renewcommand*\mfirstucMakeUppercase{\MakeUppercase}%
+\renewcommand*\mfirstucMakeUppercase{\MakeLowercase}%
+% switched the case-switching command for a while
+\xmakefirstuc{#1}%
+\renewcommand*\mfirstucMakeUppercase{\MakeUppercase}%
 }
 \newcommand*\emakefirstlc[1]{%
-  \renewcommand*\mfirstucMakeUppercase{\MakeLowercase}%
-  % switched the case-switching command for a while
-  \emakefirstuc{#1}%
-  \renewcommand*\mfirstucMakeUppercase{\MakeUppercase}%
+\renewcommand*\mfirstucMakeUppercase{\MakeLowercase}%
+% switched the case-switching command for a while
+\emakefirstuc{#1}%
+\renewcommand*\mfirstucMakeUppercase{\MakeUppercase}%
 }
 
 \newcommand*\NirStage[3]{%
-  \NirSubject{#3}%
-  \NirFinalStage[#2]{\emakefirstlc{#1}}%
+\NirSubject{#3}%
+\NirFinalStage[#2]{\emakefirstlc{#1}}%
 }
 % Usage example from virens
 % <http://mydebianblog.blogspot.ru/2008/09/732-2001-latex.html>:
@@ -437,17 +437,17 @@
 % If you want the virens' (non-conforming) formatting, here is a
 % general switch:
 \newcommand*\nirVirensTitle{%
-  \renewcommand*\NirSubjectModifier{}%
-  \renewcommand*\NirFinalStage[2][\finalname]{%
-    \NirFinal[##1]%
-    \renewcommand*\NirSubjectModifier{\emakefirstuc{##2}~~}%
-  }%
-  % renewcommand merely to shortcut the case conversion done
-  % in \NirStage (to avoid an error):
-  \renewcommand*\NirStage[3]{%
-    \NirSubject{##3}%
-    \NirFinalStage[##2]{##1}%
-  }%
+\renewcommand*\NirSubjectModifier{}%
+\renewcommand*\NirFinalStage[2][\finalname]{%
+\NirFinal[##1]%
+\renewcommand*\NirSubjectModifier{\emakefirstuc{##2}~~}%
+}%
+% renewcommand merely to shortcut the case conversion done
+% in \NirStage (to avoid an error):
+\renewcommand*\NirStage[3]{%
+\NirSubject{##3}%
+\NirFinalStage[##2]{##1}%
+}%
 } % It should be used before any uses of \NirFinalStage, of course.
 
 % Обозначения и сокращения
@@ -458,23 +458,23 @@
 \newcounter{abbrev}%
 \newcommand{\Define}[2]{\nomenclature[X]{#1}{#2.}}%
 \newcommand{\Abbrev}[2]{%
-    \addtocounter{abbrev}{1}%
-    \nomenclature[Y{\three@digits{\value{abbrev}}}]{#1}{#2.}%
+\addtocounter{abbrev}{1}%
+\nomenclature[Y{\three@digits{\value{abbrev}}}]{#1}{#2.}%
 }%
 
 \renewcommand\nomname{}%
 \renewcommand\nomgroup[1]{%
-    \if#1X%
-        \Defines%
-    \else%
-        \Abbreviations%
-    \fi%
+\if#1X%
+\Defines%
+\else%
+\Abbreviations%
+\fi%
 }%
 \renewcommand\nomlabel[1]{#1 \cdash---\kern-0.4em}%
 \renewcommand\thenomenclature{%
-    \list{}{%
-        \let\makelabel\nomlabel%
-    }%
+\list{}{%
+\let\makelabel\nomlabel%
+}%
 }%
 
 \makenomenclature%

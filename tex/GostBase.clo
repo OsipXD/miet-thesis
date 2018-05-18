@@ -34,7 +34,7 @@
 \DeclareOption{cp866} {\renewcommand\Gost@encoding{cp866} }
 \DeclareOption{econommode}{\newcommand\Gost@LineSpread{1.3}\erroqweqwe}
 
-\ExecuteOptions{a4paper,13pt,final,utf8}
+\ExecuteOptions{a4paper,14pt,final,utf8}
 \ProcessOptions
 
 \input{size\@ptsize.clo}

@@ -22,64 +22,56 @@
 
 \begin{document}
 
-\frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+    \frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
 
-\maketitle %создает титульную страницу
-
-
-%\begin{executors}
-%\personalSignature{Первый исполнитель}{ФИО}
-%
-%\personalSignature{Второй исполнитель}{ФИО}
-%\end{executors}
+    \maketitle %создает титульную страницу
 
 
-%\listoffigures                         % Список рисунков
-
-%\listoftables                          % Список таблиц
-
-%\NormRefs % Нормативные ссылки 
-% Команды \breakingbeforechapters и \nonbreakingbeforechapters
-% управляют разрывом страницы перед главами.
-% По-умолчанию страница разрывается.
-
-% \nobreakingbeforechapters
-% \breakingbeforechapters
-
-%\include{00-abstract}
-
-\tableofcontents
-
-\printnomenclature % Автоматический список сокращений
-
-\include{12-intro}
-
-\mainmatter % это включает нумерацию глав и секций в документе ниже
-
-\include{20-analysis}
-\include{30-design}
-\include{40-impl}
-%\include{50-research}
-%\include{60-economics}
-%\include{70-bzd}
-
-\backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и
-            
-\include{80-conclusion}%% заключение
+    %\begin{executors}
+    %\personalSignature{Первый исполнитель}{ФИО}
+    %
+    %\personalSignature{Второй исполнитель}{ФИО}
+    %\end{executors}
 
 
-\include{81-biblio}
+    %\listoffigures                         % Список рисунков
+
+    %\listoftables                          % Список таблиц
+
+    %\NormRefs % Нормативные ссылки
+    % Команды \breakingbeforechapters и \nonbreakingbeforechapters
+    % управляют разрывом страницы перед главами.
+    % По-умолчанию страница разрывается.
+
+    % \nobreakingbeforechapters
+    % \breakingbeforechapters
+
+    \include{00-abstract}
+
+    \tableofcontents
+
+    \printnomenclature % Автоматический список сокращений
+
+    \include{12-intro}
+
+    \mainmatter % это включает нумерацию глав и секций в документе ниже
+
+    \include{20-research}
+    \include{30-design}
+    \include{40-impl}
+
+    \backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и
+
+    \include{50-conclusion} %% заключение
 
 
-\appendix   % Тут идут приложения
+    \include{81-biblio}
 
-\include{90-appendix1}
 
-\include{91-appendix2}
+    \appendix % Тут идут приложения
+
+    \include{90-appendix1}
+
+    \include{91-appendix2}
 
 \end{document}
-
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: t
-%%% End:
