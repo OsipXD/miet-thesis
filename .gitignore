@@ -239,7 +239,7 @@ TSWLatexianTemp*
 ### JetBrains template
 
 # User-specific stuff
-.idea/
+.idea
 
 # CMake
 cmake-build-debug/
@@ -251,9 +251,8 @@ cmake-build-release/
 
 ### G7-32
 
-# Build directory
+# Build directory content
 /build/**
 
 # Unignore result
-!/build/
 !/build/rpz.pdf
