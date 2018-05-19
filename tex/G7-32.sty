@@ -460,6 +460,7 @@
 \newcommand{\Abbrev}[2]{%
     \addtocounter{abbrev}{1}%
     \nomenclature[Y{\three@digits{\value{abbrev}}}]{#1}{#2.}%
+    \hyphenation{#1}
 }%
 
 \renewcommand\nomname{}%
