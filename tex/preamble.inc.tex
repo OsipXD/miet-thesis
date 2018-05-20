@@ -41,7 +41,14 @@ citecolor=black, menucolor=black, filecolor=black,
 \usepackage{multirow}
 
 % itemize внутри tabular и выравнивание таблиц
-\usepackage{paralist,array,tabularx,tabulary}
+\usepackage{paralist,array,tabularx}
+
+% для любой таблицы
+\newcolumntype{L}{>{\raggedright\arraybackslash}l}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+% tabularx
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %\setlength{\parskip}{1ex plus0.5ex minus0.5ex} % разрыв между абзацами
