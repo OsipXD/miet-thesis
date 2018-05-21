@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="14cm" viewBox="3 4 473 268" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="177.042,109.6 161.185,109.6 161.185,109.571 135.829,109.571 "/>
+    <polygon style="fill: #000000" points="187.042,112.6 197.042,109.6 187.042,106.6 "/>
+    <polygon style="fill: #000000" points="177.042,112.6 187.042,109.6 177.042,106.6 "/>
+    <polygon style="fill: #000000" points="135.829,107.071 125.829,109.571 135.829,112.071 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="135.829,107.071 125.829,109.571 135.829,112.071 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="115.44,171.141 115.44,167.394 115.381,167.394 115.381,154.147 "/>
+    <polygon style="fill: #000000" points="112.44,181.141 115.44,191.141 118.44,181.141 "/>
+    <polygon style="fill: #000000" points="112.44,171.141 115.44,181.141 118.44,171.141 "/>
+    <polygon style="fill: #000000" points="117.881,154.147 115.381,144.147 112.881,154.147 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="117.881,154.147 115.381,144.147 112.881,154.147 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="256.361" y="109.681">
+    <tspan x="256.361" y="109.681"></tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="134.289" y="103.176">
+    <tspan x="134.289" y="103.176">СОСТОИТ_ИЗ</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="120.277" y="167.158">
+    <tspan x="120.277" y="167.158">ИМЕЕТ_РАСП</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="207.051,64.9477 207.051,51.4325 207.048,51.4325 207.048,51.4174 "/>
+    <polygon style="fill: #000000" points="204.551,64.9477 207.051,74.9477 209.551,64.9477 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="204.551,64.9477 207.051,74.9477 209.551,64.9477 "/>
+    <polygon style="fill: #000000" points="210.048,39.4174 207.048,27.4174 204.048,39.4174 "/>
+    <polygon style="fill: #000000" points="210.048,51.4174 207.048,39.4174 204.048,51.4174 "/>
+  </g>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="212" y="60">
+    <tspan x="212" y="60">ИМЕЕТ_П</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="186.229,16.5454 115.381,16.5454 115.381,65.083 "/>
+    <polygon style="fill: #000000" points="186.229,19.0454 196.229,16.5454 186.229,14.0454 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="186.229,19.0454 196.229,16.5454 186.229,14.0454 "/>
+    <polygon style="fill: #000000" points="112.881,65.083 115.381,75.083 117.881,65.083 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="112.881,65.083 115.381,75.083 117.881,65.083 "/>
+  </g>
+  <g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="29.4454" y="130.339">
+        <tspan x="29.4454" y="130.339">ИД Группы, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="29.4454" y1="131.542" x2="69.4454" y2="131.542"/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="25.4337" y="98.362" width="80" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="25.4337" y="98.362" width="80" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="65.4337" y="113.462">
+        <tspan x="65.4337" y="113.462">ГРУППА</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="105.434" y="75.583" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="105.434" y="75.583" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="115.107" cy="86.637" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.107" cy="86.637" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.107" cy="86.637" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="105.434" y="98.3328" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="105.434" y="98.3328" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="115.107" cy="109.387" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.107" cy="109.387" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.107" cy="109.387" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="105.434" y="121.17" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="105.434" y="121.17" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="115.107" cy="132.224" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.107" cy="132.224" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.107" cy="132.224" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="177.469,247.966 161.68,247.966 161.68,225.187 136.392,225.187 "/>
+    <polygon style="fill: #000000" points="187.469,250.966 197.469,247.966 187.469,244.966 "/>
+    <polygon style="fill: #000000" points="177.469,250.966 187.469,247.966 177.469,244.966 "/>
+    <polygon style="fill: #000000" points="136.392,222.687 126.392,225.187 136.392,227.687 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="136.392,222.687 126.392,225.187 136.392,227.687 "/>
+  </g>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="132" y="220">
+    <tspan x="132" y="220">СОСТОИТ_ИЗ</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="121.113" y="29.2659">
+    <tspan x="121.113" y="29.2659">ИМЕЕТ_П</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="353.626,73.9345 353.626,62.7151 353.53,62.7151 353.53,37.9957 "/>
+    <polygon style="fill: #000000" points="350.626,85.9345 353.626,97.9345 356.626,85.9345 "/>
+    <polygon style="fill: #000000" points="350.626,73.9345 353.626,85.9345 356.626,73.9345 "/>
+    <polygon style="fill: #000000" points="356.03,37.9957 353.53,27.9957 351.03,37.9957 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="356.03,37.9957 353.53,27.9957 351.03,37.9957 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="323.174,109.679 319.681,109.679 319.681,109.681 306.688,109.681 "/>
+    <polygon style="fill: #000000" points="333.174,112.679 343.174,109.679 333.174,106.679 "/>
+    <polygon style="fill: #000000" points="323.174,112.679 333.174,109.679 323.174,106.679 "/>
+    <polygon style="fill: #000000" points="306.688,107.181 296.688,109.681 306.688,112.181 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="306.688,107.181 296.688,109.681 306.688,112.181 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="353.533,169.28 353.533,168.339 353.58,168.339 353.58,153.899 "/>
+    <polygon style="fill: #000000" points="350.533,181.28 353.533,193.28 356.533,181.28 "/>
+    <polygon style="fill: #000000" points="350.533,169.28 353.533,181.28 356.533,169.28 "/>
+    <polygon style="fill: #000000" points="356.08,153.899 353.58,143.899 351.08,153.899 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="356.08,153.899 353.58,143.899 351.08,153.899 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="207.586" y1="227.762" x2="235.586" y2="227.762"/>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="217.101" y="4.94068" width="126.578" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="217.101" y="4.94068" width="126.578" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="280.39" y="20.0407">
+        <tspan x="280.39" y="20.0407">ПЛАН УЧЕБНЫЙ</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="197.101" y="4.94068" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="197.101" y="4.94068" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="206.774" cy="15.9947" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="206.774" cy="15.9947" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="206.774" cy="15.9947" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="221.514" y="39.2659">
+        <tspan x="221.514" y="39.2659">ИД УП, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="219.136" y1="41.2717" x2="249.136" y2="41.2717"/>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="343.679" y="5.15022" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="343.679" y="5.15022" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="353.352" cy="16.2042" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.352" cy="16.2042" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.352" cy="16.2042" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+  </g>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="360" y="50.1606">
+    <tspan x="360" y="50.1606">СОСТОИТ_ИЗ</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="291.679" y="165.337">
+    <tspan x="291.679" y="165.337">СОДЕРЖИТ_М</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="301.425" y="91.9117">
+    <tspan x="301.425" y="91.9117">ИМЕЕТ_</tspan>
+    <tspan x="301.425" y="102.495">ДОЛГИ</tspan>
+  </text>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="4.0466" y="191.141" width="101.044" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="4.0466" y="191.141" width="101.044" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="54.5688" y="206.241">
+        <tspan x="54.5688" y="206.241">РАСПИСАНИЕ</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="105.492" y="191.141" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="105.492" y="191.141" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="115.165" cy="202.195" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.165" cy="202.195" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.165" cy="202.195" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="105.492" y="213.949" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="105.492" y="213.949" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="115.165" cy="225.003" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.165" cy="225.003" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="115.165" cy="225.003" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="7.9534" y="223.497">
+        <tspan x="7.9534" y="223.497">ИД Группы, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="8" y1="225.29" x2="52" y2="225.29"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <g>
+          <rect style="fill: #ffffff" x="197.469" y="236.728" width="19.8948" height="22.4767"/>
+          <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="197.469" y="236.728" width="19.8948" height="22.4767"/>
+        </g>
+        <g>
+          <ellipse style="fill: #000000" cx="207.142" cy="247.782" rx="3.35979" ry="3.35979"/>
+          <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="207.142" cy="247.782" rx="3.35979" ry="3.35979"/>
+          <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="207.142" cy="247.782" rx="3.35979" ry="3.35979"/>
+        </g>
+      </g>
+      <g>
+        <rect style="fill: #ffffff" x="217.469" y="236.728" width="80" height="22.6389"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="217.469" y="236.728" width="80" height="22.6389"/>
+        <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="257.469" y="251.828">
+          <tspan x="257.469" y="251.828">ЗАНЯТИЕ</tspan>
+        </text>
+      </g>
+    </g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="201.839" y="269.248">
+        <tspan x="201.839" y="269.248">ИД Занятия, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="201.839" y1="271.497" x2="245.839" y2="271.497"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="204" y="193.28" width="139.632" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="204" y="193.28" width="139.632" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="273.816" y="208.38">
+        <tspan x="273.816" y="208.38">МЕРОПРИЯТИЕ К...</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="343.586" y="193.28" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="343.586" y="193.28" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="353.259" cy="204.334" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.259" cy="204.334" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.259" cy="204.334" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="207.953" y="225.601">
+      <tspan x="207.953" y="225.601">ИД КМ, ...</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="465.589,168.824 465.589,168.295 465.626,168.295 465.626,154.267 "/>
+    <polygon style="fill: #000000" points="462.589,180.824 465.589,192.824 468.589,180.824 "/>
+    <polygon style="fill: #000000" points="462.589,168.824 465.589,180.824 468.589,168.824 "/>
+    <polygon style="fill: #000000" points="468.126,154.267 465.626,144.267 463.126,154.267 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="468.126,154.267 465.626,144.267 463.126,154.267 "/>
+  </g>
+  <g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="455.642" y="192.824" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="455.642" y="192.824" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="465.315" cy="203.878" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="465.315" cy="203.878" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="465.315" cy="203.878" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="383.642" y="192.824" width="72" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="383.642" y="192.824" width="72" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="419.642" y="207.924">
+        <tspan x="419.642" y="207.924">РЕСУРС</tspan>
+      </text>
+    </g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="386.953" y="224.824">
+        <tspan x="386.953" y="224.824">ИД Ресурса, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="386.953" y1="227.073" x2="430.953" y2="227.073"/>
+    </g>
+  </g>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="420.554" y="165.471">
+    <tspan x="420.554" y="165.471">ИММЕТ_Р</tspan>
+  </text>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="363.679" y="98.4403" width="112" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="363.679" y="98.4403" width="112" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="419.679" y="113.54">
+        <tspan x="419.679" y="113.54">ДИСЦИПЛИНА</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="343.679" y="98.4403" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="343.679" y="98.4403" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="353.352" cy="109.494" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.352" cy="109.494" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.352" cy="109.494" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="367.357" y="131.497">
+        <tspan x="367.357" y="131.497">ИД Дисциплины, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="367.632" y1="133.658" x2="427.632" y2="133.658"/>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="343.632" y="120.922" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="343.632" y="120.922" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="353.305" cy="131.976" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.305" cy="131.976" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="353.305" cy="131.976" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="455.679" y="121.29" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="455.679" y="121.29" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="465.352" cy="132.344" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="465.352" cy="132.344" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="465.352" cy="132.344" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="217.042" y="98.362" width="78.6363" height="22.6389"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="217.042" y="98.362" width="78.6363" height="22.6389"/>
+      <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="218.542" y="113.462">
+        <tspan x="218.542" y="113.462"> СТУДЕНТ</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="197.042" y="98.362" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="197.042" y="98.362" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="206.716" cy="109.416" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="206.716" cy="109.416" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="206.716" cy="109.416" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+    <g>
+      <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:Liberation Serif;font-style:normal;font-weight:normal" x="203.031" y="130.339">
+        <tspan x="203.031" y="130.339">ИД Студента, ...</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="201.426" y1="132.315" x2="251.426" y2="132.315"/>
+    </g>
+    <g>
+      <g>
+        <rect style="fill: #ffffff" x="197.104" y="75.9534" width="19.8948" height="22.4767"/>
+        <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="197.104" y="75.9534" width="19.8948" height="22.4767"/>
+      </g>
+      <g>
+        <ellipse style="fill: #000000" cx="206.777" cy="87.0074" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="206.777" cy="87.0074" rx="3.35979" ry="3.35979"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="206.777" cy="87.0074" rx="3.35979" ry="3.35979"/>
+      </g>
+    </g>
+  </g>
+</svg>
