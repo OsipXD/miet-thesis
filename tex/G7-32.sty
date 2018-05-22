@@ -74,6 +74,12 @@
 \newenvironment{abstract}{%То же самое, только как у белых людей -- Коротков И.
  \Referat
 }{}
+
+\newcommand\Abbreviations{%обозначения и сокращения
+    \newpage
+    \section*{\centering ОБОЗНАЧЕНИЯ~И~%
+    СОКРАЩЕНИЯ}%
+}
 \newcommand\Defines{%глоссарий
     \newpage
     \section*{\centering ОПРЕДЕЛЕНИЯ}%Ugly hack((( FIXME
@@ -83,10 +89,6 @@
 %\newcommand\Defines{%определения
 % \chapter*{Определения}%
 %}
-\newcommand\Abbreviations{%обозначения и сокращения
- \chapter*{Обозначения~и~%
-           сокращения}%
-}
 \newcommand\Introduction{%введение
  \chapter{Введение}%
 }
@@ -456,19 +458,20 @@
 \def\three@digits#1{\ifnum#1>99\else\ifnum#1>9 0\else00\fi\fi\number#1}
 
 \newcounter{abbrev}%
-\newcommand{\Define}[2]{\nomenclature[X]{#1}{#2.}}%
 \newcommand{\Abbrev}[2]{%
     \addtocounter{abbrev}{1}%
-    \nomenclature[Y{\three@digits{\value{abbrev}}}]{#1}{#2.}%
-    \hyphenation{#1}
+    \nomenclature[X{\three@digits{\value{abbrev}}}]{#1}{#2.}%
+    \hyphenation{#1} % Запрещаем перенос аббревиатур
 }%
+\newcommand{\Define}[2]{}%
+%\newcommand{\Define}[2]{\nomenclature[Y]{#1}{#2.}}%
 
 \renewcommand\nomname{}%
 \renewcommand\nomgroup[1]{%
     \if#1X%
-        \Defines%
-    \else%
         \Abbreviations%
+    \else%
+        \Defines%
     \fi%
 }%
 \renewcommand\nomlabel[1]{#1 \cdash---\kern-0.4em}%
