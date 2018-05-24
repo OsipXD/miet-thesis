@@ -19,6 +19,11 @@
 \expandafter\makenewmintedenviromnents\expandafter{\mintedoptions}
 
 \renewcommand{\listingscaption}{Листинг}
-\renewcommand{\listoflistingscaption}{Листинги} 
+\renewcommand{\listoflistingscaption}{Листинги}
+
+% Нумерация листингов внутри глав
+\renewcommand*{\thelisting}{\thechapter.\arabic{listing}}
+\@addtoreset{listing}{section}
+
 \fi
 \endinput
