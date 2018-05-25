@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 248" height="248" width="382">
+    <style type="text/css"><![CDATA[
+.st1 {fill:#262626;font-family:Arial;font-size:10pt}
+.st2 {fill:#404040;font-family:Arial;font-size:10pt}
+]]></style>
+    <defs/>
+    <g transform="translate(1,1)">
+        <g id="shape1">
+            <path d="M123,0C138.2,0,152.8,2.8,166.3,7.9L123,123L123,0z" stroke="#70a970" fill="#70a970"/>
+            <text class="st1">
+                <tspan x="125.9" y="58.7">6%</tspan>
+            </text>
+        </g>
+        <g id="shape2">
+            <path d="M166.3,7.9C212.9,25.4,246,70.3,246,123C246,155.1,233.7,184.3,213.6,206.1L123,123L166.3,7.9z" stroke="#8fbc8f" fill="#8fbc8f"/>
+            <text class="st1">
+                <tspan x="177" y="110.5">31%</tspan>
+            </text>
+        </g>
+        <g id="shape3">
+            <path d="M213.6,206.1C191.2,230.6,158.9,246,123,246C89.6,246,59.2,232.7,37.1,211L123,123L213.6,206.1z" stroke="#a0c6a0" fill="#a0c6a0"/>
+            <text class="st1">
+                <tspan x="111.9" y="195.4">25%</tspan>
+            </text>
+        </g>
+        <g id="shape4">
+            <path d="M37.1,211C14.2,188.7,0,157.5,0,123C0,96.8,8.2,72.5,22.2,52.6L123,123L37.1,211z" stroke="#b1d0b1" fill="#b1d0b1"/>
+            <text class="st1">
+                <tspan x="41.4" y="133">22%</tspan>
+            </text>
+        </g>
+        <g id="shape5">
+            <path d="M22.2,52.6C37.3,30.9,59.3,14.3,85,6L123,123L22.2,52.6z" stroke="#c1dac1" fill="#c1dac1"/>
+            <text class="st1">
+                <tspan x="69" y="71.2">10%</tspan>
+            </text>
+        </g>
+        <g id="shape6">
+            <path d="M85,6C96.9,2.1,109.7,0,123,0L123,123L85,6z" stroke="#d2e4d2" fill="#d2e4d2"/>
+            <text class="st1">
+                <tspan x="102.8" y="58.5">5%</tspan>
+            </text>
+        </g>
+        <g transform="translate(266,12.3)">
+            <g id="shape7">
+                <path d="M0,0M19,9.5C19,14.7,14.7,19,9.5,19C4.3,19,0,14.7,0,9.5C0,4.3,4.3,0,9.5,0C14.7,0,19,4.3,19,9.5z" stroke="#70a970" fill="#70a970"/>
+                <text class="st2">
+                    <tspan x="29.8" y="13">Oreo</tspan>
+                </text>
+            </g>
+            <g id="shape8" transform="translate(0,27)">
+                <path d="M0,0M19,9.5C19,14.7,14.7,19,9.5,19C4.3,19,0,14.7,0,9.5C0,4.3,4.3,0,9.5,0C14.7,0,19,4.3,19,9.5z" stroke="#8fbc8f" fill="#8fbc8f"/>
+                <text class="st2">
+                    <tspan x="29.8" y="13">Nougat</tspan>
+                </text>
+            </g>
+            <g id="shape9" transform="translate(0,54)">
+                <path d="M0,0M19,9.5C19,14.7,14.7,19,9.5,19C4.3,19,0,14.7,0,9.5C0,4.3,4.3,0,9.5,0C14.7,0,19,4.3,19,9.5z" stroke="#a0c6a0" fill="#a0c6a0"/>
+                <text class="st2">
+                    <tspan x="29.8" y="13">Marshmallow</tspan>
+                </text>
+            </g>
+            <g id="shape10" transform="translate(0,81)">
+                <path d="M0,0M19,9.5C19,14.7,14.7,19,9.5,19C4.3,19,0,14.7,0,9.5C0,4.3,4.3,0,9.5,0C14.7,0,19,4.3,19,9.5z" stroke="#b1d0b1" fill="#b1d0b1"/>
+                <text class="st2">
+                    <tspan x="29.8" y="13">Lollipop</tspan>
+                </text>
+            </g>
+            <g id="shape11" transform="translate(0,108)">
+                <path d="M0,0M19,9.5C19,14.7,14.7,19,9.5,19C4.3,19,0,14.7,0,9.5C0,4.3,4.3,0,9.5,0C14.7,0,19,4.3,19,9.5z" stroke="#c1dac1" fill="#c1dac1"/>
+                <text class="st2">
+                    <tspan x="29.8" y="13">Kit Kat</tspan>
+                </text>
+            </g>
+            <g id="shape12" transform="translate(0,135)">
+                <path d="M0,0M19,9.5C19,14.7,14.7,19,9.5,19C4.3,19,0,14.7,0,9.5C0,4.3,4.3,0,9.5,0C14.7,0,19,4.3,19,9.5z" stroke="#d2e4d2" fill="#d2e4d2"/>
+                <text class="st2">
+                    <tspan x="29.8" y="13">Другие</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
