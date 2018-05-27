@@ -5,7 +5,14 @@
 \usepackage{minted}
 
 % Сюда вставлять общие опции
-\newcommand{\mintedoptions}{linenos,frame=single,fontsize=\footnotesize,style=bw,fontfamily=cyrillicfontttnoftr}
+\newcommand{\mintedoptions}{
+  linenos,
+  frame=single,
+  fontsize=\footnotesize,
+  style=bw,
+  fontfamily=cyrillicfontttnoftr,
+  breaklines
+}
 
 % Сюда пихать новые языки
 \newcommand{\makenewmintedenviromnents}[1]{%
