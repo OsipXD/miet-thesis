@@ -1,0 +1,17 @@
+before_deploy:
+# Переименование релизного APK и перемещение в корневую директорию
+- cp presentation/build/outputs/apk/release/presentation-release.apk ORIOKS.apk
+# Реквизиты Travis CI и создание тэга билда
+- git config --local user.name "Travis CI"
+- git config --local user.email "builds@travis-ci.org"
+- git tag "build-$TRAVIS_BUILD_NUMBER" -a -m "Build \#$TRAVIS_BUILD_NUMBER"
+deploy:
+  provider: releases # Билд будет загружен в GitHub Releases
+  skip_cleanup: true # Не очищать результаты сборки перед публикацией
+  overwrite: true # Разрешить перезапись билда
+  api_key:
+    secure: <зашифрованный_токен_доступа>
+  file: ORIOKS.apk # Файл, который будет загружен в качестве билда
+  on:
+    repo: OsipXD/orioks-app # Репозиторий, в который загружать билд
+  branch: master # Ветка, пуш в которую инициирует создание билда

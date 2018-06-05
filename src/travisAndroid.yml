@@ -1,0 +1,25 @@
+language: android # Язык проекта выставляется не java, a android
+env:
+  # Переменные, которые могут быть использованы позже
+  global:
+  - TARGET_API_LEVEL=27
+  - MIN_API_LEVEL=19
+  - BUILD_TOOLS_VERSION=27.0.3
+android:
+  # Список необходимых компонентов
+  components:
+  - tools
+  - platform-tools
+  - tools
+  - build-tools-$BUILD_TOOLS_VERSION
+  - android-$TARGET_API_LEVEL
+  - android-$MIN_API_LEVEL
+  - extra-google-m2repository
+  - extra-android-m2repository
+  licenses:
+  - android-sdk-preview-license-.+
+  - android-sdk-license-.+
+  - google-gdk-license-.+
+before_install:
+- chmod +x gradlew # Необходимо сделать скрипт запуска Gradle исполняемым
+- "./gradlew dependencies || true" # Разрешение зависимостей перед сборкой
