@@ -27,7 +27,7 @@ citecolor=black, menucolor=black, filecolor=black,
 % С такими оно полями оно работает по-умолчанию:
 % \RequirePackage[left=20mm,right=10mm,top=20mm,bottom=20mm,headsep=0pt,includefoot]{geometry}
 % Если вас тошнит от поля в 10мм --- увеличивайте до 20-ти, ну и про переплёт не забывайте
-\geometry{ignorefoot}% считать от нижней границы текста
+\geometry{ignorefoot} % считать от нижней границы текста
 
 
 % Пакет Tikz
@@ -39,6 +39,34 @@ citecolor=black, menucolor=black, filecolor=black,
 
 % ячейки в несколько строчек
 \usepackage{multirow}
+
+% Для рисования иерархии папок - forest
+\usepackage{forest}
+
+% Стиль по умолчанию
+\forestset{
+  default preamble={
+    for tree={
+      font=\ttfamily,
+      grow'=0,
+      child anchor=west,
+      parent anchor=south,
+      anchor=west,
+      calign=first,
+      edge path={
+        \noexpand\path [draw, \forestoption{edge}]
+        (!u.south west) +(7.5pt,0) |- node[fill,inner sep=0pt] {} (.child anchor)\forestoption{edge label};
+      },
+      before typesetting nodes={
+        if n=1
+        {insert before={[,phantom]}}
+        {}
+      },
+      fit=band,
+      before computing xy={l=15pt},
+    }
+  }
+}
 
 % itemize внутри tabular и выравнивание таблиц
 \usepackage{paralist,array,tabularx}
