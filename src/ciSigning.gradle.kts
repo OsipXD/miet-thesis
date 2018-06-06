@@ -5,13 +5,13 @@ android {
             val isRunningOnCI = System.getenv("CI") == "true"
 
             if (isRunningOnCI) {
-                // Если сборка из CI, тополучаем значения из переменных окружения
+                // При сборке из CI, значения считываются из переменных окружения
                 storeFile = file("../keystore.jks")
                 storePassword = System.getenv("keystore_password")
                 keyAlias = System.getenv("keystore_alias")
                 keyPassword = System.getenv("keystore_alias_password")
             } else {
-                // Иначе считываем значения из файла
+                // Иначе значения считываются из файла
                 val secretProperties = Properties()
                 val fis = FileInputStream(project.file("secret.properties"));
                 secretProperties.load(fis)
