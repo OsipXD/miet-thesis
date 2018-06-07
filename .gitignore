@@ -256,3 +256,4 @@ cmake-build-release/
 
 # Unignore result
 !/build/rpz.pdf
+!/build/tor.pdf
