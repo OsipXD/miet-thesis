@@ -1,47 +1,80 @@
 \chapter{Текст программы}
 \label{ch:appendix3}
+\vfill
 \setcounter{page}{1}
-\\
+\begin{center}
+  МОБИЛЬНОЕ ПРИЛОЖЕНИЕ СОПРОВОЖДЕНИЯ УЧЕБНОГО ПРОЦЕССА СТУДЕНТОВ В СИСТЕМЕ ОРОИКС\\
+  (МП СУПС)
+\end{center}
+\vfill
+\thispagestyle{empty}
+\newpage
+
 \begingroup
   \kotlinfile{inc/src/code/main.gradle.kts}
   \captionof{listing}{Сценарий сборки корневого проекта (build.gradle.kts)}
 \endgroup
-\\
+~\\
 \begingroup
   \kotlinfile{inc/src/code/build.gradle.kts}
   \captionof{listing}{Сценарий сборки модуля presentation (presentation/build.gradle.kts)}
 \endgroup
-\\
+~\\
 \begingroup
   \kotlinfile{inc/src/code/dependencies.gradle.kts}
   \captionof{listing}{Файл, где производится настройка зависимостей (presentation/build.gradle.kts)}
-\\
+
 \begingroup
   \kotlinfile{inc/src/code/AuthFragment.kt}
-  \captionof{listing}{Фрагмент экрана авторизации (presentation/auth/fragment/AuthFragment.kt)}
+  \captionof{listing}{Экрана авторизации (presentation/auth/fragment/AuthFragment.kt)}
 \endgroup
-\\
+
 \begingroup
   \kotlinfile{inc/src/code/AuthPresenter.kt}
   \captionof{listing}{Представитель экрана авторизации (presentation/auth/presenter/AuthPresenter.kt)}
 \endgroup
-\\
+~\\
 \begingroup
 \kotlinfile{inc/src/code/Validator.kt}
 \captionof{listing}{Утилитарный класс для валидации полей (domain/util/Validator.kt)}
 \endgroup
-\\
+~\\
 \begingroup
   \kotlinfile{inc/src/code/AuthView.kt}
   \captionof{listing}{Абстракция View экрана авторизации (presentation/auth/view/AuthView.kt)}
 \endgroup
-\\
+~\\
 \begingroup
   \xmlfile{inc/src/code/screen_auth.xml}
-  \captionof{listing}{Макет экрана авторизации (res/layout/screen_auth.xml)}
+  \captionof{listing}{Макет экрана авторизации (res/layout/screen\_auth.xml)}
 \endgroup
-\\
+~\\
 \begingroup
   \yamlfile{inc/src/code/.travis.yml}
   \captionof{listing}{Настройки Travis CI (.travis.yml)}
+\endgroup
+~\\
+\begingroup
+  \kotlinfile{inc/src/code/ComponentHolder.kt}
+  \captionof{listing}{Менеджер компонентов Dagger 2\\(internal/di/holder/common/ComponentHolder.kt)}
+\endgroup
+~\\
+\begingroup
+  \kotlinfile{inc/src/code/SubComponentHolder.kt}
+  \captionof{listing}{Менеджер дочерних компонентов Dagger 2\\(internal/di/holder/common/SubComponentHolder.kt)}
+\endgroup
+~\\
+\begingroup
+  \kotlinfile{inc/src/code/MainComponent.kt}
+  \captionof{listing}{Пример компонента Dagger 2 (internal/di/component/MainComponent.kt)}
+\endgroup
+~\\
+\begingroup
+  \kotlinfile{inc/src/code/BaseActivity.kt}
+  \captionof{listing}{Базовая реализация Activity (presentation/common/activity/BaseActivity.kt)}
+\endgroup
+~\\
+\begingroup
+  \kotlinfile{inc/src/code/BaseFragment.kt}
+  \captionof{listing}{Базовая реализация Fragment (presentation/common/fragment/BaseFragment .kt)}
 \endgroup

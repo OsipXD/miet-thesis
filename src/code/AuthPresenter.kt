@@ -1,59 +1,75 @@
-package ru.endlesscode.miet.orioks.presentation.auth.fragment
+package ru.endlesscode.miet.orioks.presentation.auth.presenter
 
-import android.os.Bundle
-import android.view.View
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
-import kotlinx.android.synthetic.main.screen_auth.*
+import com.arellomobile.mvp.InjectViewState
+import io.reactivex.Observable
+import io.reactivex.functions.BiFunction
 import ru.endlesscode.miet.orioks.R
-import ru.endlesscode.miet.orioks.internal.di.DI
-import ru.endlesscode.miet.orioks.presentation.auth.presenter.AuthPresenter
+import ru.endlesscode.miet.orioks.internal.Screens
 import ru.endlesscode.miet.orioks.presentation.auth.view.AuthView
-import ru.endlesscode.miet.orioks.presentation.common.fragment.BaseFragment
-import ru.endlesscode.miet.orioks.util.asObservable
+import ru.endlesscode.miet.orioks.presentation.common.presenter.BasePresenter
+import ru.endlesscode.miet.orioks.util.Validator
+import ru.endlesscode.miet.orioks.util.Validator.Companion.BLANK
+import ru.endlesscode.miet.orioks.util.Validator.Companion.NO_ERROR
+import ru.endlesscode.miet.orioks.util.Validator.Companion.TOO_SHORT
+import ru.endlesscode.miet.orioks.util.Validator.Companion.WRONG_LENGTH
+import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 
+@InjectViewState
+class AuthPresenter @Inject constructor(
+        private val router: Router,
+        private val validator: Validator,
+        private val authUseCase: AuthUseCase
+) : BasePresenter<AuthView>() {
 
-class AuthFragment : BaseFragment(), AuthView {
-
-    companion object {
-        fun newInstance(): AuthFragment = AuthFragment()
+    fun setFieldsValues(loginValues: Observable<CharSequence>, passwordValues: Observable<CharSequence>) {
+        safeSubscribe {
+            Observable.combineLatest(
+                    loginValues.map(this::checkLogin),
+                    passwordValues.map(this::checkPassword),
+                    BiFunction({ loginIsValid: Boolean, passIsValid: Boolean -> loginIsValid && passIsValid })
+            ).subscribe(viewState::toggleLoginButton)
+        }
     }
 
-    override val layoutId = R.layout.screen_auth
+    private fun checkLogin(login: CharSequence): Boolean {
+        val status = validator.validate(login) {
+            notBlank()
+            lengthExact(7)
+        }
 
-    @Inject
-    @InjectPresenter
-    internal lateinit var presenter: AuthPresenter
+        when (status) {
+            BLANK -> viewState.showLoginError(R.string.error_empty_field)
+            WRONG_LENGTH -> viewState.showLoginError(R.string.error_wrong_login_length)
+            else -> viewState.showLoginError(0)
+        }
 
-    @ProvidePresenter
-    fun providePresenter(): AuthPresenter = presenter
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        DI.main.provideComponent().inject(this)
-        super.onCreate(savedInstanceState)
+        return status == NO_ERROR
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    private fun checkPassword(password: CharSequence): Boolean {
+        val status = validator.validate(password) {
+            notBlank()
+            minimalLength(3)
+        }
 
-        registerListeners()
+        when (status) {
+            BLANK -> viewState.showPasswordError(R.string.error_empty_field)
+            TOO_SHORT -> viewState.showPasswordError(R.string.error_password_too_short)
+            else -> viewState.showPasswordError(0)
+        }
+
+        return status == NO_ERROR
     }
 
-    override fun showLoginError(messageId: Int) {
-        student_number_layout.error = if (messageId == 0) "" else getString(messageId)
+    fun onLogInClicked() {
+        authUseCase.auth().subscribe(
+                onSuccess = this::goToNextScreen,
+                onError = viewState::showError;
+        )
     }
 
-    override fun showPasswordError(messageId: Int) {
-        password_layout.error = if (messageId == 0) "" else getString(messageId)
-    }
-
-    override fun toggleLoginButton(enabled: Boolean) {
-        log_in_button.isEnabled = enabled
-    }
-
-    private fun registerListeners() {
-        presenter.setFieldsValues(student_number_text_view.asObservable(), password_text_view.asObservable())
-        log_in_button.setOnClickListener { presenter.onLogInClicked() }
+    private fun goToNextScreen() {
+        router.newRootScreen(Screens.MAIN_MENU)
     }
 }
