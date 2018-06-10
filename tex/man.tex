@@ -1,0 +1,27 @@
+%% Преамбула TeX-файла
+
+\documentclass[liberation]{G7-32}
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+
+\begin{document}
+
+  \frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+
+  \include{man/00-title}
+
+  \include{man/10-anno}
+  \tableofcontents
+  \printnomenclature % Автоматический список сокращений
+
+  \mainmatter % это включает нумерацию глав и секций в документе ниже
+
+  \include{man/20-function}
+  \include{man/30-conditions}
+  \include{man/40-execution}
+  \include{man/50-messages}
+
+  \backmatter
+
+\end{document}
