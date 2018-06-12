@@ -1,0 +1,31 @@
+%% Преамбула TeX-файла
+
+\documentclass[liberation]{G7-32}
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+
+\renewcommand{\labelenumi}{\arabic{enumi})}
+\renewcommand{\labelenumii}{\asbuk{enumii})}
+
+\begin{document}
+
+  \frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+
+  \include{api-man/00-title}
+
+  \include{api-man/10-anno}
+  \tableofcontents
+  \printnomenclature % Автоматический список сокращений
+
+  \mainmatter % это включает нумерацию глав и секций в документе ниже
+
+  \include{api-man/20-function}
+  \include{api-man/30-char}
+  \include{api-man/40-usage}
+  \include{api-man/50-io}
+  \include{api-man/60-msg}
+
+  \backmatter
+
+\end{document}
