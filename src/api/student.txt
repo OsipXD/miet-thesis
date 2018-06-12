@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+{
+  "course": "Integer",
+  "full_name": "String",
+  "group": "String",
+  "kaf": "String",
+  "np": "String",
+  "semester": "Integer",
+  "up": "String"
+}
+
+HTTP/1.1 200 OK
+{
+  "course": 1,
+  "kaf": "ИПОВС",
+  "full_name": "Иванов Иван Иванович",
+  "group": "МП-15",
+  "semester": 2,
+  "np": "Программная инженерия",
+  "up": "Программные технологии распределенной обработки информации"
+}

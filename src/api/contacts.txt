@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+[
+  {
+    "classroom": "String",
+    "department": "String",
+    "email": "String",
+    "inner_tel": "String",
+    "tel": "String"
+  }
+]
+
+HTTP/1.1 200 OK
+[
+  {
+    "classroom": "3241",
+    "department": "ВМ-1",
+    "email": "hm1@miee.ru",
+    "inner_tel": "29-38",
+    "tel": "(499) 720-87-38"
+  }
+]

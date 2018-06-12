@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+{
+  "type": "Integer",
+  "week": "Integer"
+}
+
+HTTP/1.1 200 OK
+{
+  "type": 3,
+  "week": 7,
+}

@@ -1,2 +1,80 @@
 \chapter{Входные и выходные данные}
 \label{ch:io}
+
+\section{Получение раздела ``Контакты''}
+\label{sec:contacts}
+
+Точка входа: \code{api/v1/contacts}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=12]{inc/src/api/contacts.txt}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{classrooom} "--- номер аудитории кафедры.\\
+\code{department} "--- кафедра.\\
+\code{email} "--- электронная почта кафедры.\\
+\code{inner\_tel} "--- внутренний телефон кафедры.\\
+\code{tel} "--- телефон кафедры.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=14]{inc/src/api/contacts.txt}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение информации о текущей неделе}
+\label{sec:faq}
+
+Точка входа: \code{api/v1/contacts}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=7]{inc/src/api/schedule.txt}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{type} "--- тип недели.
+Используется для получение расписания группы:
+\begin{itemize}
+  \item 1: 1 числитель
+  \item 2: 1 знаменатель
+  \item 3: 2 числитель
+  \item 4: 2 знаменатель
+\end{itemize}
+\code{week} "--- номер недели.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=9]{inc/src/api/schedule.txt}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение информации о студенте}
+\label{sec:student}
+
+Точка входа: \code{api/v1/contacts}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=12]{inc/src/api/student.txt}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{course} "--- курс, на котором сейчас находится студент.\\
+\code{full\_name} "--- ФИО студента.\\
+\code{group} "--- учебная группа.\\
+\code{kaf} "--- кафедра студента.\\
+\code{np} "--- направление подготовки.\\
+\code{semester} "--- текущий семестр (первый или второй).\\
+\code{up} "--- профиль обучения.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=14]{inc/src/api/student.txt}
+\end{listing}
+\vspace{-0.75cm}
