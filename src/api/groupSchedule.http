@@ -1,0 +1,37 @@
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+[
+  {
+    "day": "Integer",
+    "classes": [
+      {
+        "classroom": "String",
+        "name": "String",
+        "number": "Integer",
+        "teacher": "String"
+      }
+    ]
+  }
+]
+
+HTTP/1.1 200 OK
+[
+  {
+    "day": 1,
+    "classes": [
+      {
+        "classroom": "4212а",
+        "name": "Нейронные сети",
+        "number": 3,
+        "teacher": "Рычагов Михаил Николаевич"
+      },
+      {
+        "classroom": "1204",
+        "name": "Управление программными проектами",
+        "number": 4,
+        "teacher": "Слюсарь Валентин Викторович"
+      }
+    ]
+  }
+]

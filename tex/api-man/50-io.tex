@@ -74,6 +74,34 @@
 \end{listing}
 \vspace{-0.75cm}
 
+\section{Получение расписания конкретной группы}
+\label{sec:group}
+
+Точка входа: \code{api/v1/schedule/groups/<id>/types/<type>}
+
+Где:\\
+\code{<id>} "--- идентификатор группы.\\
+\code{<type>} "--- тип недели.
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=17]{inc/src/api/groupSchedule.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{day} "--- номер дня недели.\\
+\code{classroom} "--- номер аудитории.\\
+\code{name} "--- название предмета.\\
+\code{number} "--- номер пары.\\
+\code{teacher} "--- ФИО преподавателя.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=19]{inc/src/api/groupSchedule.http}
+\end{listing}
+\vspace{-0.75cm}
+
 \section{Получение информации о студенте}
 \label{sec:student}
 
