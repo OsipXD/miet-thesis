@@ -11,6 +11,7 @@
   \item тело запроса (для создания новой сущности), если запрос имеет тип POST\@.
 \end{itemize}
 
+~\\
 Выходные данные:
 \begin{itemize}
   \item код ответа сервера;
@@ -18,9 +19,10 @@
   \item запрашиваемые данные (если запрос типа GET).
 \end{itemize}
 
-Типичный запрос выглядит следующим образом:
+~\\
+Формат запроса:
 \begin{listing}[H]
-  \httpfile[lastline=4]{inc/src/api/request.http}
+  \httpfile{inc/src/api/request.http}
 \end{listing}
 \vspace{-0.75cm}
 
