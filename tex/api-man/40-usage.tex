@@ -40,3 +40,164 @@
 \vspace{-0.75cm}
 
 Все запросы должны содержать токен доступа для идентификации пользователя и подтверждения доступа к ресурсу.
+
+\section{Получение раздела ``Контакты''}
+\label{sec:contacts}
+
+Запрос: \code{GET api/v1/contacts}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=12]{inc/src/api/contacts.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{classrooom} "--- номер аудитории кафедры.\\
+\code{department} "--- кафедра.\\
+\code{email} "--- электронная почта кафедры.\\
+\code{inner\_tel} "--- внутренний телефон кафедры.\\
+\code{tel} "--- телефон кафедры.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=14]{inc/src/api/contacts.http}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение информации о текущей неделе}
+\label{sec:faq}
+
+Запрос: \code{GET api/v1/schedule}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=7]{inc/src/api/schedule.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{type} "--- тип недели.
+Используется для получение расписания группы:
+\begin{itemize}
+  \item 1: 1 числитель
+  \item 2: 1 знаменатель
+  \item 3: 2 числитель
+  \item 4: 2 знаменатель
+\end{itemize}
+\code{week} "--- номер недели.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=9]{inc/src/api/schedule.http}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение списка групп}
+\label{sec:groups}
+
+Запрос: \code{GET api/v1/schedule/groups}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=9]{inc/src/api/groups.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{id} "--- идентификатор группы.\\
+\code{name} "--- имя учебной группы.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=11]{inc/src/api/groups.http}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение расписания конкретной группы}
+\label{sec:group}
+
+Запрос: \code{GET api/v1/schedule/groups/<id>/types/<type>}
+
+Значение параметров:\\
+\code{<id>} "--- идентификатор группы.\\
+\code{<type>} "--- тип недели.
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=17]{inc/src/api/groupSchedule.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{day} "--- номер дня недели.\\
+\code{classroom} "--- номер аудитории.\\
+\code{name} "--- название предмета.\\
+\code{number} "--- номер пары.\\
+\code{teacher} "--- ФИО преподавателя.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=19]{inc/src/api/groupSchedule.http}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение информации о студенте}
+\label{sec:student}
+
+Запрос: \code{GET api/v1/student}
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=12]{inc/src/api/student.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{course} "--- курс, на котором сейчас находится студент.\\
+\code{full\_name} "--- ФИО студента.\\
+\code{group} "--- учебная группа.\\
+\code{kaf} "--- кафедра студента.\\
+\code{np} "--- направление подготовки.\\
+\code{semester} "--- текущий семестр (первый или второй).\\
+\code{up} "--- профиль обучения.
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=14]{inc/src/api/student.http}
+\end{listing}
+\vspace{-0.75cm}
+
+\section{Получение информации о дисциплинах}
+\label{sec:dis}
+
+Запрос: \code{GET api/v1/student/dis?semester=<semester>\&year=<year>}
+
+Значение параметров:\\
+\code{<semester>} "--- cеместр, дисциплины за который хотим получить.\\
+\code{<year>} "--- год, к которому относится семестр.\\
+Если параметры не указаны, будут получены дисциплины за текущий семестр.
+
+Формат ответа:
+\begin{listing}[H]
+  \httpfile[firstline=3,lastline=16]{inc/src/api/studentDis.http}
+\end{listing}
+\vspace{-0.75cm}
+
+Описание полей:\\
+\code{ball} "--- текущий балл по дисциплине.
+\code{dateExam} "--- дата экзамена в формате \code{YYYY-MM-DD} ISO 8601.
+\code{formControl} "--- форма контроля.
+Возможные значения: Зачёт, Дифференцированный зачёт, Экзамен, Курсовая работа, Курсовой проект, Защита ВКР.\\
+\code{id} "--- уникальный идентификатор дисциплины.\\
+\code{kaf} "--- кафедра, преподающая предмет.\\
+\code{maxBall} "--- максимальный балл по дисциплине.\\
+\code{name} "--- название дисциплины.\\
+\code{semester} "--- семестр, в котором преподают дисциплину.\\
+\code{teachers} "--- ФИО преподавател(я/ей).\\
+
+Пример ответа:
+\begin{listing}[H]
+  \httpfile[firstline=18]{inc/src/api/studentDis.http}
+\end{listing}
+\vspace{-0.75cm}
