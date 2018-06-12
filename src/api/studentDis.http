@@ -1,0 +1,31 @@
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+[
+  {
+    "ball": "Float",
+    "dateExam": "String",
+    "formControl": "String",
+    "id": "Integer",
+    "kaf": "String",
+    "maxBall": "Float",
+    "name": "String",
+    "semester": "Integer",
+    "teachers": [ "String" ]
+  }
+]
+
+HTTP/1.1 200 OK
+[
+  {
+    "ball": 100.0,
+    "dateExam": "2018-06-25",
+    "formControl": "Зачёт",
+    "id": 25,
+    "kaf": "ИГД",
+    "maxBall": 55.0,
+    "name": "3D моделирование",
+    "semester": 6,
+    "teachers": [ "Соколова Татьяна Юрьевна" ]
+  }
+]
