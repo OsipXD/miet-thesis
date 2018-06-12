@@ -5,8 +5,14 @@
 % Остальные стандартные настройки убраны в preamble.inc.tex.
 \include{preamble.inc}
 
+% Настройки листингов.
+\usepackage{local-minted}
+
 \renewcommand{\labelenumi}{\arabic{enumi})}
 \renewcommand{\labelenumii}{\asbuk{enumii})}
+
+% Полезные макросы листингов.
+\include{macros.inc}
 
 \begin{document}
 

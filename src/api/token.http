@@ -1,0 +1,9 @@
+GET /api/v1 HTTP/1.1
+Accept: application/json
+Authorization: Basic <encoded_auth>
+User-Agent: <app>/<app_version> <os>
+
+HTTP/1.1 200 OK
+{
+  "token": "String"
+}
