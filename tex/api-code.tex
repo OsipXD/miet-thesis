@@ -1,0 +1,49 @@
+%% Преамбула TeX-файла
+
+\documentclass[liberation]{G7-32}
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+
+% Настройки листингов.
+\usepackage{local-minted}
+
+\renewcommand{\labelenumi}{\arabic{enumi})}
+\renewcommand{\labelenumii}{\asbuk{enumii})}
+
+% Полезные макросы листингов.
+\include{macros.inc}
+
+\begin{document}
+
+  \begin{flushright}
+    ПРИЛОЖЕНИЕ~3
+  \end{flushright}
+  \vfill
+  \begin{center}
+    \uppercase{Программный модуль для интеграции сторонних приложений с системой ОРОИКС\\~\\
+    Текст программы}
+  \end{center}
+  \vfill
+
+  \setcounter{page}{1}
+  \setcounter{chapter}{3}
+  \thispagestyle{empty}
+  \newpage
+
+  \begingroup
+    \phpfile{inc/src/api/ApiController.php}
+    \captionof{listing}{Контроллер, отвечающий за API(controllers/ApiController.php)}
+  \endgroup
+  ~\\
+  \begingroup
+    \phpfile{inc/src/api/Ball.php}
+    \captionof{listing}{Модель сущности балл (models/Ball.php)}
+  \endgroup
+  ~\\
+  \begingroup
+    \phpfile{inc/src/api/Student.php}
+    \captionof{listing}{Модель сущности студент (models/Student.php)}
+  \endgroup
+
+\end{document}
